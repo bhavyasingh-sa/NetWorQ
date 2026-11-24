@@ -1,0 +1,12 @@
+# build output
+networq
+*.o
+*.dSYM/
+output/
+
+# macOS
+.DS_Store
+
+# documents
+*.pdf
+*.docx
