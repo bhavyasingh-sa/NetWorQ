@@ -437,9 +437,9 @@ static void handleChoice(Network& app, const std::string& choice) {
 
 int main() {
     Network app;
-    app.addUser("Suhan", "Software Engineer", "3 years of experience");
-    app.addUser("Aleen", "Data Analyst", "2 years of experience");
-    app.addUser("Aditi", "Web Developer", "Fresher");
+    app.addUser("Riley", "Software Engineer", "3 years of experience");
+    app.addUser("Jordan", "Data Analyst", "2 years of experience");
+    app.addUser("Taylor", "Web Developer", "Fresher");
     std::cout << "Welcome to NetWorQ. Three sample profiles are ready to explore.\n";
 
     while (true) {
