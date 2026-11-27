@@ -10,7 +10,7 @@ The data structures the program is built on are written by hand in [`include/`](
 - **Skills and achievements:** add as many as you like to a profile.
 - **Update profile:** change the name, profession and experience.
 - **Browse:** list everyone alphabetically by name or grouped by profession.
-- **Search:** find people by the start of their name. It is case-insensitive, so `al` finds `Aleen`.
+- **Search:** find people by the start of their name. It is case-insensitive, so `be` finds `Ben`.
 - **Connections:** connect two users. The link works both ways, and the second person gets a notification.
 - **Mutual connections:** see who two users both know.
 - **Shortest path:** find the shortest chain of connections between two users.
@@ -36,7 +36,7 @@ make clean
 
 ## How to use it
 
-When it starts, three sample profiles are loaded (Suhan, Aleen and Aditi, with IDs 1001 to 1003), and you get this menu:
+When it starts, three sample profiles are loaded (IDs 1001 to 1003), so the first profile you create gets ID 1004. You get this menu:
 
 ```text
 === NetWorQ | Professional Networking ===
@@ -60,23 +60,26 @@ Type the number and press Enter. The program then asks for what it needs, such a
 
 ### Example
 
-Connect Suhan (1001) to Aleen (1002) and Aleen to Aditi (1003). Then ask for their mutual connections and the shortest path between Suhan and Aditi, add a skill to Suhan, undo it, and process the notifications. The program prints this (menus and prompts left out, and the profile shown after adding the skill):
+Create three profiles (Ava, Ben and Cara get IDs 1004, 1005 and 1006), connect Ava to Ben and Ben to Cara, then ask for their mutual connections and the shortest path between Ava and Cara. Add a skill to Ava, undo it, and process the notifications. The program prints this (menus and prompts left out, and the profile shown after adding the skill):
 
 ```text
+Profile created. Your ID is 1004.
+Profile created. Your ID is 1005.
+Profile created. Your ID is 1006.
 Connection created.
 Connection created.
-Mutual connections: Aleen
-Path: Suhan -> Aleen -> Aditi
+Mutual connections: Ben
+Path: Ava -> Ben -> Cara
 
-[1001] Suhan - Software Engineer
-Experience: 3 years of experience
-Skills: C++ (Advanced)
+[1004] Ava - Designer
+Experience: 2 years
+Skills: Figma (Advanced)
 Achievements:
 Connections: 1
 Undid the latest skill addition.
 
-To Aleen: Suhan connected with you.
-To Aditi: Aleen connected with you.
+To Ben: Ava connected with you.
+To Cara: Ben connected with you.
 ```
 
 ## How it works
